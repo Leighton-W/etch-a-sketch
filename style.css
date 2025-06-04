@@ -3,6 +3,7 @@
     flex-wrap: wrap;
 }
 
-.grid-box{
+.grid-box {
     color: blue;
-}
+    flex-grow: 1;
+  }
