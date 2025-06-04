@@ -1,1 +1,1 @@
-# etch-a-sketch
+I will be creating an in browser etch-a-sketch for the 4th Odin Project project.
