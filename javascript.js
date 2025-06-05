@@ -17,8 +17,8 @@ const container = document.querySelector("#container");
 const gridBox = document.createElement("div");
 gridBox.textContent = "Box";
 gridBox.classList.add("grid-box");
-gridBox.style.width = `480px`;
-gridBox.style.height =`480px`;
+gridBox.style.width = `40px`;
+gridBox.style.height =`40px`;
 container.appendChild(gridBox);
 
 gridBox.addEventListener("mouseover", () => {
