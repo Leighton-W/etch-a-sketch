@@ -4,6 +4,10 @@ const resetButton = document.createElement("button");
 resetButton.textContent = "Reset"
 button.appendChild(resetButton);
 
+resetButton.addEventListener("click", () => {
+    alert("Button Pressed");
+})
+
 
 
 let a = 16;
