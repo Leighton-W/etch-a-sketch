@@ -1,6 +1,6 @@
 
 
-let a = 8;
+let a = 16;
 let gridBoxDimension = 480 / a;
 
 for (let i = 0; i < a * a; i++){
