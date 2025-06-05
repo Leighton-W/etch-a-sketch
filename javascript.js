@@ -1,4 +1,10 @@
 
+const button = document.querySelector("#button");
+const resetButton = document.createElement("button");
+resetButton.textContent = "Reset"
+button.appendChild(resetButton);
+
+
 
 let a = 16;
 let gridBoxDimension = 480 / a;
