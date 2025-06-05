@@ -1,6 +1,6 @@
 
 
-let a = 4
+let a = 0;
 let gridBoxDimension = 480 / a;
 
 for (let i = 0; i < a * a; i++){
@@ -13,3 +13,14 @@ for (let i = 0; i < a * a; i++){
     container.appendChild(gridBox);
 }
 
+const container = document.querySelector("#container");
+const gridBox = document.createElement("div");
+gridBox.textContent = "Box";
+gridBox.classList.add("grid-box");
+gridBox.style.width = `480px`;
+gridBox.style.height =`480px`;
+container.appendChild(gridBox);
+
+gridBox.addEventListener("mouseover", () => {
+    gridBox.style.background = "green";
+})
