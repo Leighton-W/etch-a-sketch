@@ -4,10 +4,11 @@ const resetButton = document.createElement("button");
 resetButton.textContent = "Reset"
 button.appendChild(resetButton);
 
+const container = document.querySelector("#container");
+
 function gridSettings(a){
     let gridBoxDimension = 480 / a;
     for (let i = 0; i < a * a; i++){
-        const container = document.querySelector("#container");
         const gridBox = document.createElement("div");
         gridBox.classList.add("grid-box");
         gridBox.style.width = `${gridBoxDimension}px`;
@@ -24,5 +25,6 @@ gridSettings(16);
 
 resetButton.addEventListener("click", () => {
     let b = prompt("Select a size");
+    container.innerHTML = "";
     gridSettings(b);
 })
