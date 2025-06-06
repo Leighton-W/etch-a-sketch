@@ -24,7 +24,12 @@ gridSettings(16);
 
 
 resetButton.addEventListener("click", () => {
-    let b = prompt("Select a size");
+    let b = prompt("Select a size (max 100)");
+    b = parseInt(b);
+    if (isNaN(b) || b <= 0 || b > 100) {
+        alert("Please enter a number between 1 and 100.");
+        return;
+    }
     container.innerHTML = "";
     gridSettings(b);
 })
