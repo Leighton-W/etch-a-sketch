@@ -4,11 +4,8 @@ const resetButton = document.createElement("button");
 resetButton.textContent = "Reset"
 button.appendChild(resetButton);
 
-
-let a = 16;
-let gridBoxDimension = 480 / a;
-
 function gridSettings(a){
+    let gridBoxDimension = 480 / a;
     for (let i = 0; i < a * a; i++){
         const container = document.querySelector("#container");
         const gridBox = document.createElement("div");
